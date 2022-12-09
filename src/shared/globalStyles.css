@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+}
+
+.fullBody {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(125px);
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
