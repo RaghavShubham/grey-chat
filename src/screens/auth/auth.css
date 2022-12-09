@@ -1,0 +1,83 @@
+.authContainer {
+  height: 50%;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.authHeader {
+  color: rgba(30, 31, 46, 0.7);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.authLogo {
+  font-size: 48px;
+  color: rgba(30, 31, 46, 1);
+}
+
+.authSubHeader {
+  color: rgba(47, 48, 71, 0.9);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.authForm {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.authForm input {
+  padding: 8px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  background-color: transparent;
+  margin: 10px 0px;
+}
+
+.authForm input:focus {
+  outline: none;
+}
+
+.authForm input[type="file"] {
+  display: none;
+}
+
+.fileInput {
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.profilePicture {
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 20%;
+}
+
+.authButton {
+  width: 40%;
+  height: 40px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.error {
+  font-size: 10px;
+  color: rgb(255, 69, 69);
+  text-align: center;
+}
+
+.authFooter {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(47, 48, 71, 0.7);
+}
