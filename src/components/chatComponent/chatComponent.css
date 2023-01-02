@@ -1,0 +1,167 @@
+.chatComponent {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatHeader {
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 4%;
+  border-bottom: 1px solid #ffffffdc;
+  align-items: center;
+}
+
+.leftHead {
+  width: 80%;
+  align-items: center;
+}
+
+.activeDP {
+  width: 10%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  margin-right: 2%;
+}
+
+.leftHeadName {
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2f3047;
+}
+
+.leftHeadName span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #655d65;
+}
+
+.rightHead {
+  width: 20%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rightHead img {
+  width: 15%;
+  fill: "#655d65";
+  cursor: pointer;
+}
+
+.chatBody {
+  height: 100%;
+  overflow-y: auto;
+  padding: 1% 2%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chatBody::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.chatBody::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+.chatBody::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.2);
+}
+
+/* Handle on hover */
+.chatBody::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.textBox {
+  width: fit-content;
+  max-width: 70%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 2%;
+  border-radius: 20px 20px 20px 5px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.imageBox {
+  max-width: 40%;
+  padding: 1%;
+  flex-direction: column;
+}
+
+.messageTime {
+  text-align: right;
+  margin-left: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #655d65;
+}
+
+.textBox.owner {
+  align-self: flex-end;
+  border-radius: 20px 20px 5px 20px;
+}
+
+.imageBox.owner {
+  align-self: flex-end;
+  border-radius: 20px 20px 5px 20px;
+}
+
+.sentImage {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 5px;
+}
+
+.sendBody {
+  height: 65px;
+  padding: 10px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sendTextBox {
+  width: 85%;
+  height: 45px;
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+  padding: 3px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.sendTextBox:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.fileIcon {
+  background: rgba(255, 255, 255, 0.4);
+  width: 7.5%;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sendButton {
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+}
+
+.sendBody img {
+  width: 24px;
+  aspect-ratio: 1;
+}
