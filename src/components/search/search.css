@@ -1,0 +1,25 @@
+.searchBarContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.searchBarContainer input {
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(125px);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.searchBarContainer input:focus {
+  outline: none;
+}
+
+.searchBarContainer input::placeholder {
+  color: rgba(100, 100, 100, 0.5);
+}

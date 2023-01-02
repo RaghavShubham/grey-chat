@@ -1,0 +1,17 @@
+.leftHeader {
+  width: 100%;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.leftPP {
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 30%;
+}
+
+.displayName {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}

@@ -1,0 +1,22 @@
+.chats {
+  overflow-y: auto;
+}
+
+.chats::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.chats::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+.chats::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.2);
+}
+
+/* Handle on hover */
+.chats::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}

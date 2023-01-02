@@ -1,0 +1,72 @@
+.chatEntry {
+  width: 100%;
+  padding: 5%;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #ffffffdc;
+}
+
+.chatEntry:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chatEntry.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.chatEntryDP {
+  width: 15%;
+  aspect-ratio: 1;
+  border-radius: 30%;
+}
+
+.nameMessageContainer {
+  flex-direction: column;
+  margin-left: 7px;
+  width: 82%;
+}
+
+.nameTime {
+  justify-content: space-between;
+}
+
+.nameTime span:nth-child(2) {
+  font-size: 12px;
+  font-weight: 400;
+  color: #655d65;
+}
+
+.chatEntryName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2f3047;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lastUnread {
+  align-items: flex-end;
+}
+
+.lastMsg {
+  font-size: 14px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #655d65;
+  margin-top: 5px;
+}
+
+.unreadContainer {
+  height: 20px;
+  aspect-ratio: 1;
+  background-color: #444f7e;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}

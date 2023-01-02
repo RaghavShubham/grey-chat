@@ -1,0 +1,28 @@
+.innerHome {
+  height: 96vh;
+  width: 80vw;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftHome {
+  height: 100%;
+  width: 25%;
+  flex-direction: column;
+}
+
+.centerHome {
+  height: 100%;
+  width: 60%;
+  border-right: 1px solid #ffffffdc;
+  border-left: 1px solid #ffffffdc;
+}
+
+.rightHome {
+  height: 100%;
+  width: 25%;
+}
