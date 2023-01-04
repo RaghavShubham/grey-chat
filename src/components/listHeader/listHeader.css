@@ -1,11 +1,15 @@
 .leftHeader {
   width: 100%;
   align-items: center;
-  padding: 30px 10%;
+  padding: 25px 10%;
+  justify-content: space-between;
 }
 
+.headerL {
+  align-items: center;
+}
 .leftPP {
-  height: 40px;
+  height: 60px;
   aspect-ratio: 1;
   border-radius: 30%;
 }
@@ -14,4 +18,10 @@
   font-size: 20px;
   font-weight: 500;
   margin-left: 20px;
+}
+
+.headerR {
+  height: 24px;
+  aspect-ratio: 1;
+  cursor: pointer;
 }

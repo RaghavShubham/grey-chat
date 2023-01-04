@@ -4,8 +4,6 @@ import Chats from "../../components/chats";
 import Header from "../../components/listHeader";
 import Search from "../../components/search";
 import "./home.css";
-import { signOut } from "firebase/auth";
-import { auth } from "../../firebase";
 
 export const Home = () => {
   return (
@@ -18,9 +16,6 @@ export const Home = () => {
         </div>
         <div className="centerHome">
           <ChatComponent />
-        </div>
-        <div className="rightHome" onClick={() => signOut(auth)}>
-          SignOUt
         </div>
       </div>
     </div>

@@ -13,13 +13,14 @@ import {
 import { db } from "../../firebase";
 import "./search.css";
 import ChatEntry from "../chatEntry";
-import { AuthContext } from "../../shared/context";
+import { AuthContext, ChatContext } from "../../shared/context";
 
 const Search = () => {
   const [userName, setUserName] = useState("");
   const [user, setUser] = useState(null);
 
   const { currentUser } = useContext(AuthContext);
+  const { dispatch } = useContext(ChatContext);
 
   const userRef = collection(db, "users");
 
@@ -64,6 +65,15 @@ const Search = () => {
           photoURL: currentUser.photoURL,
         },
         [combinedId + ".date"]: serverTimestamp(),
+      });
+
+      dispatch({
+        type: "CHANGE_USER",
+        payload: {
+          uid: user.uid,
+          displayName: user.displayName,
+          photoURL: user.photoURL,
+        },
       });
     }
     setUser(null);
